@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Grid Layout</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <style>
+    .card-img-overlay {
+        background-color: rgba(21, 9, 9, 0.857);
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+
+   .inicio {
+    border-radius: 70px;
+    background-color: rgb(48, 166, 245);
+   }
+
+   body {
+    background-color: rgb(245, 149, 59);
+   }
+
+    header {
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: rgb(245, 149, 59);
+        border-radius: 20px
+        
+    }
+
+    .container {
+        background-color: rgb(245, 149, 59);
+        border-radius: 20px
+    }
+
+
+    .navbar {
+      background-color: rgb(245, 149, 59);
+  
+    }
+
+    .navbar-nav.ml-auto {
+      margin-right: 20px;
+    }
+
+    .card {
+      background-color: rgb(58, 144, 243);
+      border-radius: 20px;
+    }
+
+    .container, .navbar {
+      background-color: rgb(245, 149, 59);
+      border-radius: 20px;}
+
+
+    .rounded-image {
+    border-radius: 70px; 
+  }
+
+
+  .custom-btn-color {
+    background-color: rgb(236, 74, 25); 
+    color: white; 
+    border-color: rgb(216, 176, 66); 
+    border: 1000px;
+}
+
+
+
+
+
+#contact textarea {
+    resize: none;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+.social-links li a i {
+    transition: all 0.2s ease;
+}
+
+.social-links-icon i:hover {
+    transition: all 0.2s ease;
+    color: #721430;
+}
+
+#contact button {
+    background-color: #721430;
+    color: #fff;
+    transition: all 0.2s ease;
+    border-bottom: 4px solid #ec9481;;
+}
+
+#contact button:hover {
+    transition: all 0.2s ease;
+    background-color: #721430;
+    transform: translate(0px, -2px);
+}
+
+img {
+    border-radius: 10px;
+}
+
+.row {
+    border-radius: 5px;
+}
+  
+
+ </style>
+
+
+</head>
+<body>
+  <header id="cabeçalho">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./img/1608159327624.png" width="57"alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+      
+    
+      <!-- carousel -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- indicadores -->
+      <ol class="carousel-indicators">
+        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+
+      </ol>
+      
+      <!-- slides do carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/fox imagens/3.png" class="d-block w-100" alt="Slide 1">
+          
+        </div>
+        <div class="carousel-item">
+          <img src="img/fox imagens/5.png" class="d-block w-100" alt="Slide 2">
+         
+        </div>
+        
+      </div>
+      
+      <!-- controles do carousel -->
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+ <div class="container mt-4">
+    <div class="row">
+      <!-- Item 1 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card text-bg-dark">
+            <img src="./img/helicoptero.jpeg" class="rounded">
+          <div class="card-body">
+            <h5 class="card-title">Hlicóptero Robson</h5>
+            <a href="#" class="btn custom-btn-color">Saiba mais</a>
+
+        </div>
+        </div>
+      </div>
+      
+      <!-- Item 2 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+            <img src="./img/avião amarelo.jpeg" class="rounded" >
+          <div class="card-body">
+            <h5 class="card-title">Experimental</h5>
+            <a href="#" class="btn custom-btn-color">Saiba mais</a>
+        </div>
+        </div>
+      </div>
+      
+      <!-- Item 3 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+            <img src="./img/avião vermelho.jpeg"class="rounded" >
+          <div class="card-body">
+            <h5 class="card-title">Experimental</h5>
+            <a href="#" class="btn custom-btn-color">Saiba mais</a>
+        </div>
+        </div>
+      </div>
+      
+      <div>
+      </section>
+      <section id="contact" class="pt-5 pb-5">
+          <div class="container">
+              <div class="row">
+                  <h2 class="title-section text-center">Fale <span class="colored-text">conosco</span></h2>
+              </div>
+              <div class="row">
+                  <div class="col-md-7 mb-5">
+                      <form>
+                          <div class="mb-2">
+                              <label class="form-label colored-text fw-bold" for="name">Seu nome</label>
+                              <input class="form-control" type="text" id="name" required>
+                          </div>
+                          <div class="mb-2">
+                              <label class="form-label colored-text fw-bold" for="email">Seu e-mail</label>
+                              <input class="form-control" type="email" id="email" placeholder="exemplo@gmail.com" required>
+                          </div>
+                          <div class="mb-2">
+                              <label class="form-label colored-text fw-bold" for="tell">Seu telefone (opcional)</label>
+                              <input class="form-control" type="tel" id="tell">
+                          </div>
+                          <div class="mb-2">
+                              <label class="form-label colored-text fw-bold" for="message">Sua mensagem</label>
+                              <textarea class="form-control" id="message" required></textarea>
+                          </div>
+                          <button type="submit" class="btn fw-bold">Enviar</button>
+                      </form>
+                  </div>
+                  <div class="col-md-5">
+                      <div class="row">
+                          <h4 class="title-section colored-text">
+                              <i class="bi bi-hand-thumb-up-fill"></i>
+                          </h4>
+                          <ul class="social-links">
+                              <li>
+                                  <a href="#" class="social-links-icon" >
+                                      <i class="bi bi-facebook colored-text fs-5"></i>
+                                  </a>
+                              </li>
+                              <li class="ms-2 me-2">
+                                  <a href="#" class="social-links-icon">
+                                      <i class="bi bi-instagram colored-text fs-5"></i>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="social-links-icon">
+                                      <i class="bi bi-whatsapp colored-text fs-5"></i>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="row">
+                          <h4 class="title-section colored-text">
+                              <i class="bi bi-cursor-fill"></i>
+                              <p> Endereço </p>
+                          </h4>
+                          
+                          <p> 
+                                  
+                          </p>
+                          <p>
+                            <b>Aeroporto Bandeirinhas, Conselheiro Lafaiete - MG</b>
+                            <p>
+                              <b>
+                                Elcio Gitahy, Mecânico
+                                Whatsapp:
+                                (11) 98852-1718
+                              </b>
+                            </p>
+                            <p>
+                              <b>
+                                Ivanete Gitahy, diretora administradora
+                                Whatsapp: (11)94157-5120
+                              </b>
+                            </p>
+                          </p>
+                       
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+</div>
+  
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./lib/jquery.mask.min.js"></script>
+<script src="./main.js"></script>
+
+</body>
+</html>
